@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Ma page web responsive</title>
+    <style>
+
+    @font-face {
+        font-family: Cool;
+        src: url("./src/Fonts//coolvetica\ rg.otf");
+    }
+
+      /*
+      Les règles de style suivantes s'appliquent à l'ensemble de la page.
+      Elles garantissent que le contenu de la page s'adapte à la taille de l'écran.
+      */
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-image: url(./src/Images/Meta_12.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      
+      /*
+      La règle de style suivante s'applique au titre.
+      Elle garantit que le titre prend toute la largeur de la page et qu'il est centré.
+      */
+      h1 {
+        text-align: center;
+        width: 100%;
+        color: #F9F9F9;
+        font-family: Cool;
+      }
+
+      h2 {
+        text-align: center;
+        width: 100%;
+        color: #F9F9F9;
+        font-family: Cool;
+        margin-top: -20px;
+      }
+      
+      /*
+      La règle de style suivante s'applique au bouton.
+      Elle garantit que le bouton prend toute la largeur disponible et qu'il est centré.
+      */
+      button {
+        display: block;
+        margin: 0 auto;
+        width: 20%;
+        border: none;
+        border-radius: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 1.5rem;
+        font-family: Cool;
+        color: #283071;
+        font-weight: 800;
+        margin: 15px;
+      }
+
+      @media (max-width: 1000px) {
+        h1 {
+        text-align: center;
+        width: 100%;
+        color: #F9F9F9;
+        font-family: Cool;
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        text-align: center;
+        width: 100%;
+        color: #F9F9F9;
+        font-family: Cool;
+        font-size: 1.7rem;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        border: none;
+        border-radius: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 2.5rem;
+        font-family: Cool;
+        color: #283071;
+        font-weight: 800;
+        margin: 15px;
+      }
+
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Le titre de la page -->
+    <h1>Bienvenue sur l'espace de téléchargement de Cv d' <br> Ervoann Georges !</h1>
+    <!-- Le bouton de la page -->
+    <button onclick="openPDF()">Je chercher un alternant en graphisme !</button>
+    <button onclick="openPDF2()">Je chercher un alternant en communication !</button>
+    <button onclick="openPDF3()">Je chercher un alternant en montage et captation vidéo !</button>
+    <button onclick="openPDF4()">Je chercher un alternant en Ux/Ui !</button>
+
+    <script>
+        function openPDF() {
+          // Remplacez "mon_fichier.pdf" par le nom de votre fichier PDF
+          window.open("./src/Pdf/Cv-Georges-Ervoann-Graphisme.pdf", "_blank");
+        }
+        function openPDF2() {
+          // Remplacez "mon_fichier.pdf" par le nom de votre fichier PDF
+          window.open("./src/Pdf/Cv-Georges-Ervoann-Communication.pdf", "_blank");
+        }
+        function openPDF3() {
+          // Remplacez "mon_fichier.pdf" par le nom de votre fichier PDF
+          window.open("./src/Pdf/Cv-Georges-Ervoann-Vidéo.pdf", "_blank");
+        }
+        function openPDF4() {
+          // Remplacez "mon_fichier.pdf" par le nom de votre fichier PDF
+          window.open("./src/Pdf/Cv-Georges-Ervoann-UxUi.pdf", "_blank");
+        }
+      </script>
+  </body>
+</html>
