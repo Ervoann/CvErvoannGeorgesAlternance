@@ -1,141 +1,237 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Ma page web responsive</title>
-    <style>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ma Startup - Votre studio automatisé, prêt en un clic</title>
+  <link rel="stylesheet" href="./src/Css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Geologica:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="Gauche">
+    <div class="Avatar"><img src="./src/Images/PersoLight.jpg" alt="avatar"/></div>
+    <h1 class="Name">Ervoann Georges</h1>
+    <div class="Infos">
+      <p>Freelance en Motion / Design Graphique & UX/UI</p>
+      <p>🎒 Étudiant en Bachelor Global Communication and Digital Design</p>
+      <p>📬 Contact : georges.ervoann@gmail.com</p>
+    </div>
+  </div>
+  <div class="Droite">
+    <div class="TitreSection">
+      <h2>👁️ Qui suis-je ?</h2>
+    </div>
 
-    @font-face {
-        font-family: Cool;
-        src: url("./src/Fonts//coolvetica\ rg.otf");
-    }
+    <div class="Container">
+      <div class="Medium Portfolio" style="background-image: url(./src/Images/Miniature.png); background-repeat: no-repeat; background-size: cover; background-position: center;">
+        <div class="SiteIcon">
+          <img width="40px" height="40px" style="border-radius: 8px;" src="./src/Images/PersoLight.jpg" alt="Portfolio"/>
+        </div>
+        <div class="InfosTag">
+          <p class="Site">🔗 Portfolio</p>
+        </div>
+      </div>
+      <div class="Medium Portfolio" style="background-image: url(./src/Images/Mockup.png); background-repeat: no-repeat; background-size: cover; background-position: center;">
+        <div class="SiteIcon">
+          <img width="40px" height="40px" style="border-radius: 8px;" src="./src/Images/PersoLight.jpg" alt="Portfolio"/>
+        </div>
+        <div class="InfosTag">
+          <p class="Site">🔗 Mon cv</p>
+        </div>
+      </div>
+    </div>
 
-      /*
-      Les règles de style suivantes s'appliquent à l'ensemble de la page.
-      Elles garantissent que le contenu de la page s'adapte à la taille de l'écran.
-      */
-      html, body {
-        margin: 0;
-        padding: 0;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        background-image: url(./src/Images/Meta_12.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-      }
-      
-      /*
-      La règle de style suivante s'applique au titre.
-      Elle garantit que le titre prend toute la largeur de la page et qu'il est centré.
-      */
-      h1 {
-        text-align: center;
-        width: 100%;
-        color: #F9F9F9;
-        font-family: Cool;
-      }
+    <div class="TitreSection" style="margin-top: 40px;">
+      <h2>🔔 Mes dernières réalisations</h2>
+    </div>
 
-      h2 {
-        text-align: center;
-        width: 100%;
-        color: #F9F9F9;
-        font-family: Cool;
-        margin-top: -20px;
-      }
-      
-      /*
-      La règle de style suivante s'applique au bouton.
-      Elle garantit que le bouton prend toute la largeur disponible et qu'il est centré.
-      */
-      button {
-        display: block;
-        margin: 0 auto;
-        width: 20%;
-        border: none;
-        border-radius: 50px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        padding-left: 15px;
-        padding-right: 15px;
-        font-size: 1.5rem;
-        font-family: Cool;
-        color: #283071;
-        font-weight: 800;
-        margin: 15px;
-      }
+    <div class="Container">
+      <div class="Medium Portfolio" style="background-image: url(./src/Images/Possession.png); background-repeat: no-repeat; background-size: cover; background-position: center;">
+        <div class="SiteIcon">
+          <img width="40px" height="40px" style="border-radius: 8px;" src="./src/Images/PersoLight.jpg" alt="Portfolio"/>
+        </div>
+        <div class="InfosTag">
+          <p class="Site">🔗 T2O Possession</p>
+        </div>
+      </div>
+      <div class="Medium Portfolio" style="background-image: url(./src/Images/CirclePark.png); background-repeat: no-repeat; background-size: cover; background-position: center;">
+        <div class="SiteIcon">
+          <img width="40px" height="40px" style="border-radius: 8px;" src="./src/Images/PersoLight.jpg" alt="Portfolio"/>
+        </div>
+        <div class="InfosTag">
+          <p class="Site">🔗 Circle Park Brussels</p>
+        </div>
+      </div>
+    </div>
 
-      @media (max-width: 1000px) {
-        h1 {
-        text-align: center;
-        width: 100%;
-        color: #F9F9F9;
-        font-family: Cool;
-        font-size: 2.5rem;
-      }
+    <div class="Container">
+      <div class="Medium Portfolio" style="background-image: url(./src/Images/Illusion.png); background-repeat: no-repeat; background-size: cover; background-position: center;">
+        <div class="SiteIcon">
+          <img width="40px" height="40px" style="border-radius: 8px;" src="./src/Images/PersoLight.jpg" alt="Portfolio"/>
+        </div>
+        <div class="InfosTag">
+          <p class="Site">🔗 T2O Illusion</p>
+        </div>
+      </div>
+      <div class="Medium Portfolio" style="background-image: url(./src/Images/Projects.png); background-repeat: no-repeat; background-size: cover; background-position: center;">
+        <div class="SiteIcon">
+          <img width="40px" height="40px" style="border-radius: 8px;" src="./src/Images/PersoLight.jpg" alt="Portfolio"/>
+        </div>
+        <div class="InfosTag">
+          <p class="Site">🔗 Tous mes derniers projets</p>
+        </div>
+      </div>
+    </div>
 
-      h2 {
-        text-align: center;
-        width: 100%;
-        color: #F9F9F9;
-        font-family: Cool;
-        font-size: 1.7rem;
-      }
 
-      button {
-        display: block;
-        margin: 0 auto;
-        width: 50%;
-        border: none;
-        border-radius: 50px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        padding-left: 15px;
-        padding-right: 15px;
-        font-size: 2.5rem;
-        font-family: Cool;
-        color: #283071;
-        font-weight: 800;
-        margin: 15px;
-      }
+    <div class="TitreSection" style="margin-top: 40px;">
+      <h2>🔗 On se connecte ?</h2>
+    </div>
+    
+    <div class="Container">
 
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Le titre de la page -->
-    <h1>Bienvenue sur l'espace de téléchargement de Cv d' <br> Ervoann Georges !</h1>
-    <!-- Le bouton de la page -->
-    <button onclick="openPDF()">Je cherche un alternant en graphisme !</button>
-    <button onclick="openPDF2()">Je cherche un alternant en communication !</button>
-    <button onclick="openPDF3()">Je cherche un alternant en montage et captation vidéo !</button>
-    <button onclick="openPDF4()">Je cherche un alternant en Ux/Ui !</button>
-    <button onclick="openPDF5()">Consultez mon portfolio</button>
+      <div class="SubContainer">
+        <div class="Small Instagram">
+          <svg width="40" height="40" class="h-full w-full" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="background-color: transparent;"><rect width="40" height="40" rx="10" fill="black"/><rect x="0.5" y="0.5" width="39" height="39" rx="9.5" stroke="black" stroke-opacity="0.08"/><mask id="mask0_920_2754" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40"><rect width="40" height="40" rx="10" fill="black"/><rect x="0.5" y="0.5" width="39" height="39" rx="9.5" stroke="black" stroke-opacity="0.08"/></mask><g mask="url(#mask0_920_2754)"><path d="M20.0066 0C11.6568 0 9.21475 0.0086138 8.74007 0.0479912C7.02654 0.190427 5.96027 0.460223 4.79864 1.03858C3.90342 1.48311 3.1974 1.9984 2.5006 2.72073C1.2316 4.03803 0.462513 5.65865 0.184103 7.58507C0.0487432 8.52028 0.0093658 8.71101 0.00136727 13.488C-0.00170909 15.0803 0.00136727 17.1759 0.00136727 19.9868C0.00136727 28.3299 0.0105963 30.7694 0.050589 31.2432C0.189025 32.9106 0.450515 33.9596 1.00426 35.1071C2.06253 37.3036 4.08369 38.9525 6.46479 39.5678C7.28926 39.7801 8.19986 39.897 9.36888 39.9524C9.86417 39.9739 14.9125 39.9893 19.9639 39.9893C25.0152 39.9893 30.0666 39.9831 30.5496 39.9585C31.9032 39.8948 32.6892 39.7893 33.5583 39.5647C34.7389 39.262 35.8392 38.7051 36.7824 37.933C37.7255 37.161 38.4888 36.1924 39.0188 35.0948C39.5618 33.975 39.8371 32.886 39.9617 31.3056C39.9888 30.9611 40.0002 25.4676 40.0002 19.9816C40.0002 14.4946 39.9879 9.01127 39.9608 8.66671C39.8347 7.06086 39.5593 5.98105 38.9988 4.83973C38.5389 3.90544 38.0282 3.20772 37.2868 2.49431C35.964 1.23054 34.3458 0.461454 32.4173 0.183351C31.483 0.0482988 31.2968 0.00830617 26.5162 0H20.0066Z" fill="url(#paint0_radial_920_2754)"/><path d="M20.0066 0C11.6568 0 9.21475 0.0086138 8.74007 0.0479912C7.02654 0.190427 5.96027 0.460223 4.79864 1.03858C3.90342 1.48311 3.1974 1.9984 2.5006 2.72073C1.2316 4.03803 0.462513 5.65865 0.184103 7.58507C0.0487432 8.52028 0.0093658 8.71101 0.00136727 13.488C-0.00170909 15.0803 0.00136727 17.1759 0.00136727 19.9868C0.00136727 28.3299 0.0105963 30.7694 0.050589 31.2432C0.189025 32.9106 0.450515 33.9596 1.00426 35.1071C2.06253 37.3036 4.08369 38.9525 6.46479 39.5678C7.28926 39.7801 8.19986 39.897 9.36888 39.9524C9.86417 39.9739 14.9125 39.9893 19.9639 39.9893C25.0152 39.9893 30.0666 39.9831 30.5496 39.9585C31.9032 39.8948 32.6892 39.7893 33.5583 39.5647C34.7389 39.262 35.8392 38.7051 36.7824 37.933C37.7255 37.161 38.4888 36.1924 39.0188 35.0948C39.5618 33.975 39.8371 32.886 39.9617 31.3056C39.9888 30.9611 40.0002 25.4676 40.0002 19.9816C40.0002 14.4946 39.9879 9.01127 39.9608 8.66671C39.8347 7.06086 39.5593 5.98105 38.9988 4.83973C38.5389 3.90544 38.0282 3.20772 37.2868 2.49431C35.964 1.23054 34.3458 0.461454 32.4173 0.183351C31.483 0.0482988 31.2968 0.00830617 26.5162 0H20.0066Z" fill="url(#paint1_radial_920_2754)"/></g><path d="M20.0009 8C16.7418 8 16.3328 8.01425 15.0528 8.0725C13.7753 8.131 12.9033 8.33325 12.1403 8.63C11.351 8.9365 10.6815 9.3465 10.0145 10.0138C9.34701 10.6808 8.93701 11.3502 8.62951 12.1392C8.332 12.9025 8.1295 13.7748 8.072 15.0518C8.015 16.3317 8 16.741 8 20C8 23.259 8.0145 23.6668 8.0725 24.9468C8.13125 26.2243 8.3335 27.0962 8.63001 27.8592C8.93676 28.6485 9.34676 29.318 10.014 29.985C10.6808 30.6525 11.3503 31.0635 12.139 31.37C12.9026 31.6667 13.7748 31.869 15.0521 31.9275C16.3321 31.9858 16.7408 32 19.9996 32C23.2589 32 23.6667 31.9858 24.9467 31.9275C26.2242 31.869 27.0972 31.6667 27.8607 31.37C28.6497 31.0635 29.3182 30.6525 29.985 29.985C30.6525 29.318 31.0625 28.6485 31.37 27.8595C31.665 27.0963 31.8675 26.224 31.9275 24.947C31.985 23.667 32 23.259 32 20C32 16.741 31.985 16.332 31.9275 15.052C31.8675 13.7745 31.665 12.9025 31.37 12.1395C31.0625 11.3502 30.6525 10.6808 29.985 10.0138C29.3175 9.34625 28.65 8.93625 27.86 8.63C27.0949 8.33325 26.2224 8.131 24.9449 8.0725C23.6649 8.01425 23.2574 8 19.9974 8H20.0009ZM18.9244 10.1625C19.2439 10.162 19.6004 10.1625 20.0009 10.1625C23.2049 10.1625 23.5847 10.174 24.8499 10.2315C26.0199 10.285 26.6549 10.4805 27.0779 10.6448C27.638 10.8623 28.0372 11.1223 28.457 11.5423C28.877 11.9623 29.137 12.3622 29.355 12.9222C29.5192 13.3447 29.715 13.9797 29.7682 15.1497C29.8257 16.4148 29.8382 16.7947 29.8382 19.9972C29.8382 23.1997 29.8257 23.5797 29.7682 24.8447C29.7147 26.0147 29.5192 26.6497 29.355 27.0723C29.1375 27.6322 28.877 28.031 28.457 28.4508C28.037 28.8708 27.6382 29.1307 27.0779 29.3482C26.6554 29.5133 26.0199 29.7083 24.8499 29.7617C23.5849 29.8193 23.2049 29.8318 20.0009 29.8318C16.7966 29.8318 16.4168 29.8193 15.1518 29.7617C13.9818 29.7077 13.3468 29.5122 12.9236 29.348C12.3635 29.1305 11.9635 28.8705 11.5435 28.4505C11.1235 28.0305 10.8635 27.6315 10.6455 27.0713C10.4813 26.6488 10.2855 26.0138 10.2323 24.8438C10.1748 23.5787 10.1633 23.1987 10.1633 19.9942C10.1633 16.7897 10.1748 16.4118 10.2323 15.1468C10.2858 13.9768 10.4813 13.3417 10.6455 12.9187C10.863 12.3587 11.1235 11.9588 11.5435 11.5388C11.9635 11.1188 12.3635 10.8587 12.9236 10.6407C13.3466 10.4757 13.9818 10.2808 15.1518 10.227C16.2588 10.177 16.6878 10.162 18.9244 10.1595V10.1625ZM26.4064 12.155C26.1216 12.155 25.8432 12.2395 25.6064 12.3977C25.3695 12.556 25.185 12.7809 25.076 13.0441C24.967 13.3072 24.9385 13.5968 24.9941 13.8761C25.0497 14.1555 25.1869 14.412 25.3884 14.6134C25.5898 14.8148 25.8464 14.9519 26.1258 15.0074C26.4052 15.0629 26.6947 15.0343 26.9579 14.9252C27.221 14.8162 27.4458 14.6315 27.604 14.3947C27.7622 14.1578 27.8466 13.8793 27.8465 13.5945C27.8465 12.7995 27.2014 12.1545 26.4064 12.1545V12.155ZM20.0009 13.8375C16.5976 13.8375 13.8383 16.5968 13.8383 20C13.8383 23.4032 16.5976 26.1612 20.0009 26.1612C23.4042 26.1612 26.1627 23.4032 26.1627 20C26.1627 16.5968 23.4039 13.8375 20.0006 13.8375H20.0009ZM20.0009 16C22.2099 16 24.0009 17.7908 24.0009 20C24.0009 22.209 22.2099 24 20.0009 24C17.7916 24 16.0008 22.209 16.0008 20C16.0008 17.7908 17.7916 16 20.0009 16Z" fill="white"/><defs><radialGradient id="paint0_radial_920_2754" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(10.6251 43.0693) rotate(-90) scale(39.6323 36.8712)"><stop stop-color="#FFDD55"/><stop offset="0.1" stop-color="#FFDD55"/><stop offset="0.5" stop-color="#FF543E"/><stop offset="1" stop-color="#C837AB"/></radialGradient><radialGradient id="paint1_radial_920_2754" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-6.70024 2.88076) rotate(78.6776) scale(17.716 73.0445)"><stop stop-color="#3771C8"/><stop offset="0.128" stop-color="#3771C8"/><stop offset="1" stop-color="#6600FF" stop-opacity="0"/></radialGradient></defs></svg>
+          <div class="InfosButton">
+            <p class="Tag">@ervo_pri</p>
+            <p class="Site">Instagram.com</p>
+          </div>
+          <button class="Button">Suivre</button>
+        </div>
 
-    <script>
-        function openPDF() {
-          // Remplacez "mon_fichier.pdf" par le nom de votre fichier PDF
-          window.open("./src/Pdf/Cv-Georges-Ervoann-Graphisme.pdf", "_blank");
-        }
-        function openPDF2() {
-          // Remplacez "mon_fichier.pdf" par le nom de votre fichier PDF
-          window.open("./src/Pdf/Cv-Georges-Ervoann-Communication.pdf", "_blank");
-        }
-        function openPDF3() {
-          // Remplacez "mon_fichier.pdf" par le nom de votre fichier PDF
-          window.open("./src/Pdf/Cv-Georges-Ervoann-Vidéo.pdf", "_blank");
-        }
-        function openPDF4() {
-          // Remplacez "mon_fichier.pdf" par le nom de votre fichier PDF
-          window.open("./src/Pdf/Cv-Georges-Ervoann-UxUi.pdf", "_blank");
-        }
-        function openPDF5() {
-          // Remplacez "mon_fichier.pdf" par le nom de votre fichier PDF
-          window.open("https://ervoann.github.io/", "_blank");
-        }
-      </script>
-  </body>
-</html>
+        <div class="Small Linkedin">
+          <svg width="40" height="40" class="h-full w-full" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="background-color: transparent;"><rect width="40" height="40" rx="10" fill="#006699"></rect><path fill-rule="evenodd" clip-rule="evenodd" d="M14.7344 29V15.5053H10.249V29H14.7344ZM12.4917 13.6629C14.0558 13.6629 15.0294 12.6266 15.0294 11.3316C15.0002 10.0075 14.0558 9 12.5214 9C10.9871 9 9.98389 10.0075 9.98389 11.3316C9.98389 12.6266 10.9572 13.6629 12.4625 13.6629H12.4916H12.4917Z" fill="white"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M17.2163 29H21.7016V21.464C21.7016 21.0607 21.7308 20.6578 21.8492 20.3695C22.1735 19.5636 22.9115 18.7291 24.1506 18.7291C25.7736 18.7291 26.4229 19.9666 26.4229 21.7807V29H30.9078V21.2624C30.9078 17.1174 28.695 15.1887 25.744 15.1887C23.3243 15.1887 22.262 16.5412 21.6718 17.4624H21.7017V15.5053H17.2164C17.2753 16.7716 17.2164 29 17.2164 29H17.2163Z" fill="white"></path></svg>
+          <div class="InfosButton">
+            <p class="Tag">@ervoann</p>
+            <p class="Site">Linkedin.com</p>
+          </div>
+          <button class="Button">Suivre</button>
+        </div>
+      </div>
+
+      <div class="SubContainer">
+        <div class="Small Threads">
+          <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512" style="background-color: transparent;"><path d="M105 0h302c57.75 0 105 47.25 105 105v302c0 57.75-47.25 105-105 105H105C47.25 512 0 464.75 0 407V105C0 47.25 47.25 0 105 0z"/><path fill="#fff" fill-rule="nonzero" d="M337.36 243.58c-1.46-.7-2.95-1.38-4.46-2.02-2.62-48.36-29.04-76.05-73.41-76.33-25.6-.17-48.52 10.27-62.8 31.94l24.4 16.74c10.15-15.4 26.08-18.68 37.81-18.68h.4c14.61.09 25.64 4.34 32.77 12.62 5.19 6.04 8.67 14.37 10.39 24.89-12.96-2.2-26.96-2.88-41.94-2.02-42.18 2.43-69.3 27.03-67.48 61.21.92 17.35 9.56 32.26 24.32 42.01 12.48 8.24 28.56 12.27 45.26 11.35 22.07-1.2 39.37-9.62 51.45-25.01 9.17-11.69 14.97-26.84 17.53-45.92 10.51 6.34 18.3 14.69 22.61 24.73 7.31 17.06 7.74 45.1-15.14 67.96-20.04 20.03-44.14 28.69-80.55 28.96-40.4-.3-70.95-13.26-90.81-38.51-18.6-23.64-28.21-57.79-28.57-101.5.36-43.71 9.97-77.86 28.57-101.5 19.86-25.25 50.41-38.21 90.81-38.51 40.68.3 71.76 13.32 92.39 38.69 10.11 12.44 17.73 28.09 22.76 46.33l28.59-7.63c-6.09-22.45-15.67-41.8-28.72-57.85-26.44-32.53-65.1-49.19-114.92-49.54h-.2c-49.72.35-87.96 17.08-113.64 49.73-22.86 29.05-34.65 69.48-35.04 120.16v.24c.39 50.68 12.18 91.11 35.04 120.16 25.68 32.65 63.92 49.39 113.64 49.73h.2c44.2-.31 75.36-11.88 101.03-37.53 33.58-33.55 32.57-75.6 21.5-101.42-7.94-18.51-23.08-33.55-43.79-43.48zm-76.32 71.76c-18.48 1.04-37.69-7.26-38.64-25.03-.7-13.18 9.38-27.89 39.78-29.64 3.48-.2 6.9-.3 10.25-.3 11.04 0 21.37 1.07 30.76 3.13-3.5 43.74-24.04 50.84-42.15 51.84z"/></svg>
+          <div class="InfosButton">
+            <p class="Tag">@ervo_pri</p>
+            <p class="Site">Threads.net</p>
+          </div>
+          <button class="Button">Suivre</button>
+        </div>
+
+        <div class="Small Github">
+          <svg width="40" height="40" class="h-full w-full" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="background-color: transparent;"><rect width="40" height="40" rx="10" fill="black"></rect><g clip-path="url(#clip0_920_2749)"><path fill-rule="evenodd" clip-rule="evenodd" d="M20 8C13.37 8 8 13.37 8 20C8 25.31 11.435 29.795 16.205 31.385C16.805 31.49 17.03 31.13 17.03 30.815C17.03 30.53 17.015 29.585 17.015 28.58C14 29.135 13.22 27.845 12.98 27.17C12.845 26.825 12.26 25.76 11.75 25.475C11.33 25.25 10.73 24.695 11.735 24.68C12.68 24.665 13.355 25.55 13.58 25.91C14.66 27.725 16.385 27.215 17.075 26.9C17.18 26.12 17.495 25.595 17.84 25.295C15.17 24.995 12.38 23.96 12.38 19.37C12.38 18.065 12.845 16.985 13.61 16.145C13.49 15.845 13.07 14.615 13.73 12.965C13.73 12.965 14.735 12.65 17.03 14.195C17.99 13.925 19.01 13.79 20.03 13.79C21.05 13.79 22.07 13.925 23.03 14.195C25.325 12.635 26.33 12.965 26.33 12.965C26.99 14.615 26.57 15.845 26.45 16.145C27.215 16.985 27.68 18.05 27.68 19.37C27.68 23.975 24.875 24.995 22.205 25.295C22.64 25.67 23.015 26.39 23.015 27.515C23.015 29.12 23 30.41 23 30.815C23 31.13 23.225 31.505 23.825 31.385C28.565 29.795 32 25.295 32 20C32 13.37 26.63 8 20 8Z" fill="white"></path></g><defs><clipPath id="clip0_920_2749"><rect width="24" height="24" fill="white" transform="translate(8 8)"></rect></clipPath></defs></svg>
+          <div class="InfosButton">
+            <p class="Tag">@ervoann</p>
+            <p class="Site">Github.com</p>
+          </div>
+          <button class="Button">Suivre</button>
+        </div>
+      </div>
+  </div>
+
+  <div class="Container">
+
+    <div class="SubContainer">
+      <div class="Small Tiktok">
+        <svg viewBox="0 0 291.72499821636245 291.1" xmlns="http://www.w3.org/2000/svg" width="40" height="40" style="background-color: transparent;"><path d="M219.51 291.1H71.58C32.05 291.1 0 259.05 0 219.51V71.58C0 32.05 32.05 0 71.58 0h147.93c39.53 0 71.58 32.05 71.58 71.58v147.93c.01 39.54-32.04 71.59-71.58 71.59z"/><g fill="#25f4ee"><path d="M120.96 123.89v-8.8a64.83 64.83 0 0 0-9.23-.79c-29.93-.06-56.42 19.33-65.41 47.87s1.62 59.62 26.18 76.71c-25.77-27.58-24.3-70.83 3.28-96.6a68.425 68.425 0 0 1 45.18-18.39z"/><path d="M122.62 223.53c16.73-.02 30.48-13.2 31.22-29.92V44.44h27.25a50.7 50.7 0 0 1-.79-9.44h-37.27v149.02c-.62 16.8-14.41 30.11-31.22 30.14-5.02-.04-9.97-1.28-14.42-3.6a31.276 31.276 0 0 0 25.23 12.97zM231.98 95.05v-8.29c-10.03 0-19.84-2.96-28.19-8.51a51.63 51.63 0 0 0 28.19 16.8z"/></g><path d="M203.8 78.26a51.301 51.301 0 0 1-12.76-33.89h-9.95a51.564 51.564 0 0 0 22.71 33.89zM111.73 151.58c-17.28.09-31.22 14.17-31.13 31.45a31.293 31.293 0 0 0 16.71 27.53c-10.11-13.96-6.99-33.48 6.97-43.6a31.191 31.191 0 0 1 18.34-5.93c3.13.04 6.24.53 9.23 1.45v-37.93c-3.05-.46-6.14-.7-9.23-.72h-1.66v28.84c-3.01-.82-6.12-1.18-9.23-1.09z" fill="#fe2c55"/><path d="M231.98 95.05v28.84a88.442 88.442 0 0 1-51.69-16.8v75.77c-.08 37.81-30.75 68.42-68.56 68.42a67.816 67.816 0 0 1-39.22-12.4c25.73 27.67 69.02 29.25 96.7 3.52a68.397 68.397 0 0 0 21.83-50.09v-75.56a88.646 88.646 0 0 0 51.76 16.58V96.21c-3.64-.02-7.26-.4-10.82-1.16z" fill="#fe2c55"/><path d="M180.29 182.87V107.1a88.505 88.505 0 0 0 51.76 16.58V94.84a51.73 51.73 0 0 1-28.26-16.58 51.634 51.634 0 0 1-22.71-33.89h-27.25v149.24c-.71 17.27-15.27 30.69-32.54 29.99a31.278 31.278 0 0 1-24.06-12.9c-15.29-8.05-21.16-26.97-13.11-42.26a31.274 31.274 0 0 1 27.53-16.71c3.13.03 6.24.51 9.23 1.44V123.9c-37.74.64-67.82 32.19-67.18 69.93a68.353 68.353 0 0 0 18.73 45.86 67.834 67.834 0 0 0 39.29 11.61c37.82-.01 68.49-30.62 68.57-68.43z" fill="#fff"/></svg>
+        <div class="InfosButton">
+          <p class="Tag">@ervoann</p>
+          <p class="Site">Tiktok.com</p>
+        </div>
+        <button class="Button">Suivre</button>
+      </div>
+
+      <div class="Small Dribble">
+        <svg width="40" height="40" class="h-full w-full" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="background-color: transparent;"><rect width="40" height="40" rx="10" fill="#D15584"></rect><g clip-path="url(#clip0_920_2756)"><path d="M8 20C8 17.824 8.53602 15.816 9.608 13.976C10.68 12.136 12.136 10.68 13.976 9.608C15.816 8.53599 17.824 8 20 8C22.176 8 24.184 8.53599 26.024 9.608C27.864 10.68 29.32 12.136 30.392 13.976C31.464 15.816 32 17.824 32 20C32 22.176 31.464 24.184 30.392 26.024C29.32 27.864 27.864 29.32 26.024 30.392C24.184 31.464 22.176 32 20 32C17.824 32 15.816 31.464 13.976 30.392C12.136 29.32 10.68 27.864 9.608 26.024C8.53602 24.184 8 22.176 8 20ZM9.992 20C9.992 22.496 10.832 24.696 12.512 26.6C13.28 25.096 14.496 23.664 16.16 22.304C17.824 20.944 19.448 20.088 21.032 19.736C20.792 19.176 20.56 18.672 20.336 18.224C17.584 19.104 14.608 19.544 11.408 19.544C10.784 19.544 10.32 19.536 10.016 19.52C10.016 19.584 10.012 19.664 10.004 19.76C9.99601 19.856 9.992 19.936 9.992 20ZM10.304 17.528C10.656 17.56 11.176 17.576 11.864 17.576C14.536 17.576 17.072 17.216 19.472 16.496C18.256 14.336 16.92 12.536 15.464 11.096C14.2 11.736 13.116 12.624 12.212 13.76C11.308 14.896 10.672 16.152 10.304 17.528ZM13.88 27.896C15.688 29.304 17.728 30.008 20 30.008C21.184 30.008 22.36 29.784 23.528 29.336C23.208 26.6 22.584 23.952 21.656 21.392C20.184 21.712 18.7 22.52 17.204 23.816C15.708 25.112 14.6 26.472 13.88 27.896ZM17.552 10.328C18.96 11.784 20.264 13.6 21.464 15.776C23.64 14.864 25.28 13.704 26.384 12.296C24.528 10.76 22.4 9.992 20 9.992C19.184 9.992 18.368 10.104 17.552 10.328ZM22.328 17.48C22.568 17.992 22.84 18.64 23.144 19.424C24.328 19.312 25.616 19.256 27.008 19.256C28 19.256 28.984 19.28 29.96 19.328C29.832 17.152 29.048 15.216 27.608 13.52C26.568 15.072 24.808 16.392 22.328 17.48ZM23.744 21.104C24.56 23.472 25.112 25.904 25.4 28.4C26.664 27.584 27.696 26.536 28.496 25.256C29.296 23.976 29.776 22.592 29.936 21.104C28.768 21.024 27.704 20.984 26.744 20.984C25.864 20.984 24.864 21.024 23.744 21.104Z" fill="white"></path></g><defs><clipPath id="clip0_920_2756"><rect width="24" height="24" fill="white" transform="translate(8 8)"></rect></clipPath></defs></svg>
+        <div class="InfosButton">
+          <p class="Tag">@Ervoann</p>
+          <p class="Site">Dribble.com</p>
+        </div>
+        <button class="Button">Suivre</button>
+      </div>
+    </div>
+
+
+    <div class="SubContainer">
+      <div class="Small Behance">
+        <svg width="40" height="40" class="h-full w-full" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="background-color: transparent;"><rect width="40" height="40" rx="10" fill="#2F65EE"></rect><g clip-path="url(#clip0_1934_2795)"><path d="M14.9811 12C15.6726 12 16.3114 12.0527 16.8976 12.2107C17.4837 12.3161 17.9645 12.5335 18.3926 12.7969C18.8207 13.0603 19.1368 13.4357 19.3541 13.9165C19.5649 14.3973 19.6768 14.9834 19.6768 15.6223C19.6768 16.3665 19.5188 17.0053 19.1434 17.4861C18.8207 17.9668 18.2938 18.3949 17.6484 18.7111C18.5572 18.9745 19.2487 19.4553 19.6702 20.0941C20.0917 20.7329 20.3618 21.5298 20.3618 22.4387C20.3618 23.1829 20.2037 23.8217 19.9337 24.3552C19.6702 24.8886 19.2422 25.3694 18.7614 25.6855C18.2806 26.0082 17.6945 26.2717 17.0556 26.4297C16.4168 26.5878 15.778 26.6932 15.1391 26.6932L8 26.7064V12H14.9811ZM14.553 17.9668C15.1391 17.9668 15.6199 17.8088 15.9887 17.5388C16.3575 17.2687 16.5222 16.7945 16.5222 16.2084C16.5222 15.8857 16.4695 15.5696 16.3641 15.3588C16.2587 15.1481 16.1007 14.9834 15.8833 14.8254C15.6726 14.72 15.4553 14.6146 15.1918 14.5619C14.9284 14.5092 14.6584 14.5092 14.3422 14.5092H11.2534V17.9734C11.2534 17.9668 14.553 17.9668 14.553 17.9668ZM14.7111 24.2564C15.0338 24.2564 15.3499 24.2037 15.6199 24.151C15.8833 24.0983 16.1534 23.993 16.3641 23.8283C16.5749 23.6637 16.7395 23.5056 16.8976 23.2422C17.003 22.9787 17.1083 22.656 17.1083 22.2806C17.1083 21.5364 16.8976 21.003 16.4695 20.6276C16.0414 20.3048 15.4553 20.1468 14.7637 20.1468H11.2534V24.2498H14.7111V24.2564Z" fill="white"></path><path d="M24.9985 24.2037C25.4266 24.6318 26.0654 24.8425 26.915 24.8425C27.5012 24.8425 28.0346 24.6845 28.4627 24.4144C28.8908 24.0917 29.1542 23.7756 29.2596 23.4529H31.8676C31.4395 24.7306 30.8007 25.6394 29.9511 26.2256C29.1015 26.759 28.0873 27.0752 26.8623 27.0752C26.0127 27.0752 25.262 26.9171 24.5704 26.6471C23.8789 26.3836 23.3455 26.0082 22.8647 25.4748C22.3839 24.994 22.0151 24.4079 21.7978 23.7163C21.5343 23.0248 21.4224 22.2806 21.4224 21.4244C21.4224 20.6275 21.5277 19.8767 21.7978 19.1852C22.0678 18.4937 22.4366 17.9076 22.9174 17.3741C23.3981 16.8933 23.9843 16.4652 24.6231 16.2018C25.3146 15.9384 26.0062 15.7737 26.8623 15.7737C27.7712 15.7737 28.5681 15.9318 29.2596 16.3072C29.9511 16.6826 30.4846 17.1041 30.9127 17.7429C31.3408 18.3291 31.6569 19.0206 31.8742 19.7648C31.9796 20.509 32.0323 21.2598 31.9796 22.1094H24.2543C24.2543 22.9787 24.5704 23.7756 24.9985 24.2037ZM28.3573 18.6057C27.9819 18.2303 27.3958 18.0195 26.7043 18.0195C26.2235 18.0195 25.8547 18.1249 25.532 18.283C25.2093 18.441 24.9985 18.6584 24.7878 18.8691C24.577 19.0799 24.4651 19.3499 24.4124 19.6133C24.3597 19.8767 24.307 20.0941 24.307 20.3048H29.1015C28.9962 19.5145 28.7261 18.9811 28.3573 18.6057ZM23.6682 13.0142H29.635V14.45H23.6682V13.0142Z" fill="white"></path></g><defs><clipPath id="clip0_1934_2795"><rect width="24" height="24" fill="white" transform="translate(8 8)"></rect></clipPath></defs></svg>
+        <div class="InfosButton">
+          <p class="Tag">@ervoann</p>
+          <p class="Site">Behance.com</p>
+        </div>
+        <button class="Button">Suivre</button>
+      </div>
+
+      <div class="Small Senscritique">
+        <svg width="40" height="40" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100; border-radius:8px;" xml:space="preserve"><style type="text/css">.st0{fill:#FFFFFF; border-radius: 15px;}.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#141414;}.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}</style><path class="st0" d="M45.6,79.5c-0.2,0-0.5,0-0.7-0.1c-1.4-0.3-2.5-1.4-2.8-2.8l-2-9.6c-20.5,4.3-22.2,4.7-22.5,4.8c-1.7,0.3-3.3,0.3-4.9,0.1c-1.8-0.3-3.5-0.9-5-1.8c-1.5-0.9-2.9-2.2-3.9-3.7c-1.1-1.5-1.8-3.3-2.3-5.2C1,59.2,1,57.3,1.3,55.5c0.4-1.8,1.1-3.5,2.1-5c1-1.5,2.3-2.7,3.8-3.7c1.5-1,3.2-1.7,5-2.1c1.4-0.3,2.8-0.4,4-0.3c0.4,0,0.9,0.1,1.3,0.2l0.3-0.6c-1-1.2-1.6-2.6-2-4.3c-0.3-1.5-0.3-3.1,0.1-4.5c0.4-1.4,1-2.7,1.9-3.9c0.9-1.1,2-2.1,3.3-2.8c1.2-0.7,2.6-1.2,4.1-1.5c2.1-0.5,4.2-0.5,6.1-0.2c0-0.7,0.2-1.3,0.6-1.9c0.5-0.8,1.4-1.4,2.4-1.6l16.8-3.6c2-0.4,4,0.9,4.4,2.9l0.2,1l3.8-0.8c0.8-0.3,1.6-0.6,2.5-0.8c1.8-0.4,3.5-0.4,5.1-0.2c1.5,0.2,3,0.7,4.3,1.4l2.4,1.3c1.3,0.7,1.9,2.3,1.3,3.6l-0.8,2.1c0.9,1.1,1.6,2.5,1.9,4l14.2-3c2.2-0.5,4.3,0.9,4.8,3.1l3.5,16.2c0.2,1.1,0,2.1-0.6,3c-0.6,0.9-1.5,1.5-2.5,1.7c0,0-18.1,3.8-18.3,3.9c-1.6,0.3-3.2,0.4-4.6,0.2c-0.1,0-0.2,0-0.2,0l-2.5,3.1c-0.5,0.6-1.2,1-2,1.1c-0.8,0.1-1.6-0.2-2.2-0.7l-1.3-1.1c-0.2,0.1-0.4,0.1-0.5,0.1l2,9.6c0.3,1.4-0.3,2.8-1.4,3.7c-1.2,0.8-2.7,0.9-4,0.2l-7.3-4.3L48.5,78C47.8,78.9,46.7,79.5,45.6,79.5z M65.8,61.5C65.8,61.5,65.8,61.5,65.8,61.5C65.8,61.5,65.8,61.5,65.8,61.5z M71.2,59.1C71.2,59.1,71.2,59.1,71.2,59.1C71.2,59.1,71.2,59.1,71.2,59.1z M73.4,58.4L73.4,58.4C73.4,58.4,73.4,58.4,73.4,58.4z M19.1,45.2C19.1,45.2,19.1,45.2,19.1,45.2C19.1,45.2,19.1,45.2,19.1,45.2z M19.5,45.2C19.5,45.2,19.5,45.2,19.5,45.2C19.5,45.2,19.5,45.2,19.5,45.2z M18.5,42.7C18.5,42.7,18.5,42.7,18.5,42.7L18.5,42.7z M76.6,36.8C76.6,36.8,76.6,36.8,76.6,36.8C76.6,36.8,76.6,36.8,76.6,36.8z M73.4,29.1L73.4,29.1C73.4,29.1,73.4,29.1,73.4,29.1z"/><path class="st1" d="M35.6,27.1l10.2,47.7l0,0l6.5-9.2l9.7,5.7l0,0L51.8,23.7L35.6,27.1z"/><path class="st1" d="M93.5,44.9l-1.4,0.3l-0.8-3.6l1.4-0.3l-1.3-6.2l-19.7,4.2c0.8-1.2,1.1-2.7,0.8-4.2c-0.3-1.2-0.8-2.1-1.5-2.8c-0.4-0.3-0.8-0.6-1.3-0.8c0,0,0-0.1,0.1-0.1l0.8-2.2l0.6-1.6l-1.5-0.8c-0.9-0.5-1.9-0.8-3-1c-1.1-0.2-2.3-0.1-3.6,0.2l0,0c-1,0.2-1.8,0.5-2.5,1c-0.6,0.4-1.2,0.8-1.6,1.3l-0.2-1l-24.1,5.1l-0.1,0l-0.6-0.3c-2.2-1.2-4.8-1.5-7.7-0.9l0,0c-1.1,0.2-2.1,0.6-2.9,1.1c-0.9,0.5-1.6,1.1-2.2,1.8c-0.6,0.7-1,1.5-1.2,2.4c-0.2,0.9-0.2,1.8-0.1,2.7c0.3,1.4,0.9,2.4,1.8,3.2c0.4,0.4,0.9,0.7,1.4,0.9c-0.2,0.2-0.4,0.4-0.6,0.7l-1.8,4c0,0,0,0.1,0,0.1c0.2,0.2,1.1,0.8,1.5,1c0.5,0.3,1,0.5,1.5,0.7l-3.2,0.7c0,0,0,0,0,0c-0.6-0.5-1.3-0.8-2-1.1c-0.8-0.3-1.6-0.5-2.4-0.6c-0.9-0.1-1.8,0-2.8,0.2l0,0c-1.3,0.3-2.6,0.8-3.7,1.5c-1.1,0.7-2,1.6-2.7,2.6c-0.7,1-1.2,2.2-1.5,3.5c-0.3,1.3-0.2,2.6,0.1,4C5.7,61.7,6.2,63,6.9,64c0.8,1.1,1.7,1.9,2.8,2.6c1.1,0.7,2.3,1.1,3.6,1.3c1.1,0.2,2.3,0.2,3.5,0c0.1,0,46.3-9.8,46.3-9.8v0c0.7-0.1,1.3-0.4,1.9-0.6c0.1-0.1,0.3-0.1,0.4-0.2l0.7,0.6l1.5,1.3l1.3-1.6l1.3-1.6l0.9-1.1c0.7,0.3,1.4,0.5,2.2,0.6c1,0.1,2.1,0.1,3.3-0.2h0l0,0c0.2,0,18.3-3.9,18.3-3.9L93.5,44.9z"/><g><path class="st2" d="M30,47.3c-1.5,0.3-2.8,0.4-4,0.2c-1.1-0.2-2.1-0.5-2.9-1.1c0,0,0,0,0,0l1.2-2.6c0,0,0,0,0.1,0c0.6,0.4,1.4,0.7,2.3,0.9c0.9,0.2,2,0.2,3.1,0c1-0.2,1.6-0.5,2-1c0.4-0.5,0.5-0.9,0.4-1.4c-0.1-0.5-0.4-0.8-1-0.9c-0.5-0.1-1.1-0.2-1.8-0.2c-0.7,0-1.5,0-2.3,0c-0.8,0-1.6-0.1-2.3-0.3c-0.7-0.2-1.3-0.5-1.9-1c-0.5-0.4-0.9-1.1-1.1-2c-0.1-0.6-0.1-1.2,0-1.8c0.2-0.6,0.4-1.1,0.8-1.6c0.4-0.5,0.9-1,1.6-1.3c0.7-0.4,1.5-0.7,2.4-0.9c2.4-0.5,4.5-0.3,6.3,0.7l-1.2,2.5c0,0,0,0,0,0c-0.7-0.4-1.5-0.6-2.3-0.7c-0.9-0.1-1.7-0.1-2.5,0.1c-0.7,0.2-1.3,0.4-1.6,0.8c-0.4,0.4-0.5,0.8-0.4,1.3c0.1,0.4,0.4,0.7,1,0.9c0.5,0.1,1.1,0.2,1.8,0.2c0.7,0,1.4,0,2.3,0.1c0.8,0,1.6,0.1,2.3,0.3c0.7,0.2,1.4,0.5,1.9,1c0.5,0.5,0.9,1.1,1.1,2c0.1,0.7,0.1,1.3,0,1.9c-0.1,0.6-0.4,1.2-0.8,1.7c-0.4,0.5-1,1-1.7,1.4C31.9,46.8,31.1,47.1,30,47.3z"/><path class="st2" d="M37.6,45.5L35,33.4l9.1-1.9l0.5,2.3l-6.4,1.4l0.5,2.4l5-1.1l0.5,2.3l-5,1.1l0.6,2.7l6.4-1.3l0.5,2.3L37.6,45.5z"/><path class="st2" d="M56.8,41.4l-7.6-6.7l1.7,8l-2.7,0.6l-2.6-12.1l3-0.6l7.4,6.5l-1.6-7.7l2.7-0.6l2.6,12.1L56.8,41.4z"/><path class="st2" d="M66.1,39.7c-1.2,0.2-2.2,0.3-3.2,0.1c-0.9-0.2-1.7-0.4-2.3-0.8l0.8-2.3c0,0,0,0,0.1,0c0.2,0.1,0.5,0.2,0.7,0.3c0.3,0.1,0.7,0.2,1.1,0.3c0.4,0.1,0.8,0.1,1.2,0.1c0.4,0,0.8,0,1.3-0.1c0.8-0.2,1.3-0.4,1.7-0.8c0.3-0.4,0.4-0.7,0.4-1.2c-0.1-0.4-0.4-0.6-0.8-0.8c-0.4-0.1-0.9-0.2-1.5-0.2c-0.6,0-1.2,0-1.8,0c-0.6,0-1.3-0.1-1.8-0.2c-0.6-0.2-1.1-0.4-1.5-0.8c-0.4-0.4-0.7-0.9-0.9-1.7c-0.1-0.5-0.1-1,0-1.5c0.1-0.5,0.4-1,0.7-1.4c0.3-0.4,0.8-0.8,1.4-1.1c0.5-0.3,1.2-0.6,2-0.7c1-0.2,2-0.3,2.9-0.1c0.8,0.1,1.6,0.4,2.3,0.8l-0.8,2.1c0,0,0,0,0,0c-0.5-0.3-1.2-0.5-1.8-0.6c-0.7-0.1-1.4-0.1-2.1,0.1c-0.6,0.1-1.1,0.4-1.4,0.7c-0.3,0.3-0.4,0.7-0.4,1.1c0.1,0.4,0.3,0.6,0.8,0.7c0.4,0.1,0.9,0.1,1.4,0.1l1.8,0c0.6,0,1.3,0.1,1.8,0.3c0.6,0.2,1.1,0.4,1.5,0.8c0.4,0.4,0.7,1,0.9,1.7c0.2,1.2,0,2.2-0.7,3.1C69,38.7,67.8,39.3,66.1,39.7z"/><path class="st2" d="M13.5,65.2c-1-0.2-2-0.5-2.8-1c-0.8-0.5-1.6-1.2-2.2-2c-0.6-0.8-1-1.8-1.3-3C7,58.1,6.9,57,7.1,56c0.2-1,0.6-1.9,1.2-2.8c0.6-0.8,1.3-1.5,2.2-2.1c0.9-0.6,1.9-1,3-1.2c0.8-0.2,1.6-0.2,2.2-0.2c0.7,0.1,1.3,0.2,1.9,0.4c0.6,0.2,1.1,0.5,1.5,0.9c0.4,0.3,0.7,0.6,1.1,1c0,0,0,0.1,0,0.2l-2,1.6c-0.1,0.1-0.2,0.1-0.3,0c-0.4-0.4-1-0.8-1.6-1c-0.7-0.3-1.5-0.4-2.3-0.2c-0.7,0.1-1.3,0.4-1.9,0.8c-0.5,0.4-1,0.8-1.3,1.4c-0.3,0.5-0.6,1.2-0.7,1.8c-0.1,0.7-0.1,1.4,0.1,2.1c0.2,0.7,0.4,1.4,0.8,1.9c0.4,0.6,0.8,1,1.3,1.4c0.5,0.4,1.1,0.6,1.8,0.7c0.6,0.1,1.3,0.1,2,0c0.8-0.2,1.5-0.5,2-1.1c0.5-0.5,0.8-1,1-1.6c0-0.1,0.1-0.2,0.2-0.1l2.5,0.6c0.1,0,0.1,0.1,0.1,0.1c-0.2,0.4-0.4,0.9-0.6,1.3c-0.3,0.5-0.6,1-1.1,1.4c-0.4,0.4-0.9,0.8-1.5,1.2c-0.6,0.3-1.3,0.6-2.1,0.8C15.6,65.4,14.5,65.4,13.5,65.2z"/><path class="st2" d="M29.9,54.8c-0.3,0.4-0.7,0.6-1.2,0.7l-3,0.6L24.9,53l3-0.6c0.6-0.1,1-0.1,1.4,0.2c0.4,0.2,0.6,0.6,0.7,1C30.2,54,30.2,54.4,29.9,54.8z M30.7,57.3l0.2-0.1c0.3-0.1,0.6-0.3,0.9-0.6c0.3-0.2,0.5-0.6,0.7-0.9c0.2-0.4,0.3-0.8,0.4-1.2c0.1-0.5,0-1-0.1-1.5c-0.1-0.5-0.3-1-0.6-1.5c-0.3-0.4-0.7-0.8-1.1-1.1c-0.4-0.3-0.9-0.5-1.5-0.6c-0.6-0.1-1.2-0.1-1.9,0.1l-6.1,1.3c0,0,0,0,0,0l2.6,12.1l2.7-0.6l-0.9-4.2l2.1-0.4l3.4,3.7l3.1-0.7L30.7,57.3z"/><path class="st2" d="M36.2,60.8l-2.6-12.1l2.7-0.6l2.6,12.1L36.2,60.8z"/><path class="st2" d="M43.9,59.2l-2.1-9.8l-3.5,0.7l-0.5-2.3l9.7-2.1l0.5,2.3l-3.5,0.7l2.1,9.8L43.9,59.2z"/><path class="st2" d="M51.7,57.5l-2.6-12.1l2.7-0.6l2.6,12.1L51.7,57.5z"/><path class="st2" d="M64.8,50.8c-0.3,0.8-0.7,1.3-1.5,1.9c-0.5,0.3-0.7,0.4-1.1,0.5l-0.2,0c-0.6,0.1-1.1,0.1-1.6,0c-0.5-0.1-1-0.3-1.4-0.6c-0.4-0.3-0.7-0.7-1-1.1c-0.3-0.4-0.5-0.9-0.6-1.5c-0.1-0.5-0.1-1.1-0.1-1.6c0.1-0.5,0.2-1,0.5-1.4c0.2-0.4,0.6-0.8,1-1.1c0.4-0.3,0.9-0.5,1.5-0.6c0.6-0.1,1.1-0.1,1.6,0c0.5,0.1,1,0.3,1.4,0.6c0.4,0.3,0.7,0.7,1,1.1c0.3,0.4,0.5,1,0.6,1.5C65.1,49.3,65,50,64.8,50.8z M66.9,52.4c0.4-0.7,0.7-1.4,0.8-2.2c0.1-0.8,0.1-1.6-0.1-2.5c-0.2-0.9-0.5-1.7-1-2.4c-0.5-0.7-1.1-1.3-1.8-1.7c-0.7-0.4-1.5-0.7-2.3-0.9c-0.9-0.1-1.8-0.1-2.7,0.1c-1,0.2-1.8,0.6-2.5,1c-0.7,0.5-1.3,1.1-1.8,1.8c-0.4,0.7-0.8,1.5-0.9,2.3c-0.2,0.8-0.1,1.7,0.1,2.6c0.2,0.9,0.5,1.7,1,2.4c0.5,0.7,1.1,1.3,1.8,1.7c0.7,0.4,1.5,0.7,2.3,0.9c0.9,0.1,1.8,0.1,2.8-0.1c0.6-0.1,1.1-0.3,1.6-0.5c0.5-0.2,0.9-0.5,1.3-0.8l0.1-0.1l1.8,1.5l1.3-1.6L66.9,52.4L66.9,52.4z"/><path class="st2" d="M83.3,50.8l-2.6-12.1l9.1-1.9l0.5,2.3l-6.4,1.3l0.5,2.4l5-1.1l0.5,2.3l-5,1.1l0.6,2.7l6.4-1.3l0.5,2.3L83.3,50.8z"/><path class="st2" d="M76.1,52.6c-1,0.2-1.8,0.3-2.6,0.2c-0.8-0.1-1.4-0.3-2-0.7c-0.6-0.3-1-0.8-1.4-1.4c-0.4-0.6-0.6-1.2-0.8-2l-1.6-7.3l2.7-0.6l1.5,7.1c0.2,0.9,0.6,1.5,1.2,2c0.6,0.4,1.4,0.5,2.4,0.3c0.9-0.2,1.6-0.6,2-1.3c0.4-0.6,0.5-1.4,0.3-2.3l-1.5-7.1l2.7-0.6l1.6,7.3c0.2,0.7,0.2,1.5,0.1,2.1c-0.1,0.7-0.3,1.3-0.7,1.8c-0.4,0.5-0.9,1-1.6,1.4C77.9,52.1,77.1,52.4,76.1,52.6z"/></g></svg>
+        <div class="InfosButton">
+          <p class="Tag">@ervo_pri</p>
+          <p class="Site">Senscritique.com</p>
+        </div>
+        <button class="Button">Suivre</button>
+      </div>
+    </div>
+
+    
+</div>
+<div class="InfosFooter">
+  <p>Développé avec une 🦦 par <a href="https://ervoann.github.io">Georges Ervoann</a> - Librement inspiré de <a href="https://bento.me/" target="_blank">Bento.me</a></p>
+</div>
+</div>
+  
+
+</body>
+
+<script>
+  var Insta = document.querySelector('.Instagram');
+  var Linkedin = document.querySelector('.Linkedin');
+  var Behance = document.querySelector('.Behance');
+  var Senscritique = document.querySelector('.Senscritique');
+  var Tiktok = document.querySelector('.Tiktok');
+  var Dribble = document.querySelector('.Dribble');
+  var Threads = document.querySelector('.Threads');
+  var Github = document.querySelector('.Github');
+  var Portfolio = document.querySelector('.Portfolio');
+
+  Insta.addEventListener('click', function() {
+    window.open('https://instagram.com/ervo_pri?igshid=ZDdkNTZiNTM=', '_blank');
+  });
+
+  Linkedin.addEventListener('click', function() {
+    window.open('https://www.linkedin.com/in/ervoann-georges-544089209', '_blank');
+  });
+
+  Behance.addEventListener('click', function() {
+    window.open('https://www.behance.net/ervoanngeoges', '_blank');
+  });
+
+  Senscritique.addEventListener('click', function() {
+    window.open('https://www.senscritique.com/Ervoann', '_blank');
+  });
+
+  Tiktok.addEventListener('click', function() {
+    window.open('https://www.tiktok.com/@ervoann', '_blank');
+  });
+
+  Dribble.addEventListener('click', function() {
+    window.open('https://dribbble.com/Ervoann', '_blank');
+  });
+
+  Threads.addEventListener('click', function() {
+    window.open('https://www.threads.net/@ervo_pri', '_blank');
+  });
+
+  Github.addEventListener('click', function() {
+    window.open('https://github.com/Ervoann', '_blank');
+  });
+
+  Portfolio.addEventListener('click', function() {
+    window.open('https://ervoann.github.io/', '_blank');
+  });
+
+</script>
+</html
